@@ -1,0 +1,49 @@
+.portfolio-carousel {
+    .carousel-caption {
+        position: absolute;
+        top: 35%;
+        bottom: auto;
+        left: 10%;
+        right: auto;
+        text-align: left;
+        @include media-breakpoint-down(md) {
+            position: absolute;
+            top: 20%;
+            bottom: auto;
+            left: 10%;
+            right: auto;
+            text-align: left;
+        }
+        #typing {
+            width: 0ch;
+            float: left;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 5s steps(100) 1s infinite alternate;
+        }
+        #typing span {
+            float: left;
+            color: #7462E1;
+        }
+        #line {
+            color: #7462E1;
+            animation: crow 0.5s linear 0s infinite;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 41ch;
+            }
+        }
+        @keyframes crow {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    }
+}
