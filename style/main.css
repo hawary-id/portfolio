@@ -12081,60 +12081,103 @@ footer a {
   }
 }
 
-.portfolio-carousel .carousel-caption #typing {
-  width: 0ch;
-  float: left;
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-animation: typing 5s steps(100) 1s infinite alternate;
-          animation: typing 5s steps(100) 1s infinite alternate;
-}
-
-.portfolio-carousel .carousel-caption #typing span {
-  float: left;
-  color: #7462E1;
-}
-
-.portfolio-carousel .carousel-caption #line {
-  color: #7462E1;
-  -webkit-animation: crow 0.5s linear 0s infinite;
-          animation: crow 0.5s linear 0s infinite;
-}
-
 @-webkit-keyframes typing {
-  from {
-    width: 0;
+  0% {
+    width: 0%;
   }
-  to {
-    width: 41ch;
+  2% {
+    width: 0%;
+  }
+  5% {
+    width: 0%;
+  }
+  17% {
+    width: 100%;
+  }
+  19% {
+    width: 100%;
+  }
+  24% {
+    width: 0%;
+  }
+  80% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
   }
 }
 
 @keyframes typing {
-  from {
-    width: 0;
+  0% {
+    width: 0%;
   }
-  to {
-    width: 41ch;
+  2% {
+    width: 0%;
+  }
+  5% {
+    width: 0%;
+  }
+  17% {
+    width: 100%;
+  }
+  19% {
+    width: 100%;
+  }
+  24% {
+    width: 0%;
+  }
+  80% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
   }
 }
 
-@-webkit-keyframes crow {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.portfolio-carousel .carousel-caption .frontend,
+.portfolio-carousel .carousel-caption .backend,
+.portfolio-carousel .carousel-caption .designer {
+  overflow: hidden;
+  color: #7462E1;
+  width: 0;
+  float: left;
+  white-space: nowrap;
+  position: absolute;
+  -webkit-animation-name: typing;
+          animation-name: typing;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-@keyframes crow {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.portfolio-carousel .carousel-caption .backend {
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-timing-function: steps(18);
+          animation-timing-function: steps(18);
+}
+
+.portfolio-carousel .carousel-caption .frontend {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-timing-function: steps(17);
+          animation-timing-function: steps(17);
+}
+
+.portfolio-carousel .carousel-caption .designer {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-timing-function: steps(16);
+          animation-timing-function: steps(16);
+}
+
+.portfolio-carousel .carousel-caption q {
+  float: left;
+  color: #6b6b6b;
 }
 
 .page-home hr {
@@ -12233,6 +12276,29 @@ footer a {
   -webkit-animation-name: bounce;
           animation-name: bounce;
   -moz-animation-name: bounce;
+}
+
+.page-projects {
+  margin-top: 150px;
+}
+
+.page-projects h3, .page-projects .h3 {
+  border-bottom: 2px solid #7462E1;
+  display: inline-block;
+  width: auto;
+}
+
+.page-projects .portfolio-about .text-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #4B4B4B;
+}
+
+.page-projects .portfolio-about .text-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .component-projects {
