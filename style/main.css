@@ -12304,11 +12304,15 @@ footer a {
 .page-dashboard .profile-picture {
   width: 40px;
   height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 
 .page-dashboard #page-content-wrapper {
   background: #f5f5fb;
+  width: 100%;
+  padding-top: 100px;
 }
 
 .page-dashboard #sidebar-wrapper {
@@ -12332,7 +12336,7 @@ footer a {
   margin-left: 0;
 }
 
-.page-dashboard .navbar-store {
+.page-dashboard .navbar-portfolio {
   margin-top: 0;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 5px #cacad1;
@@ -12340,7 +12344,7 @@ footer a {
 }
 
 @media (min-width: 768px) {
-  .page-dashboard .navbar-store {
+  .page-dashboard .navbar-portfolio {
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -12350,7 +12354,7 @@ footer a {
 .page-dashboard .list-group-item {
   border: 0;
   font-size: 16px;
-  color: #c5c5c5;
+  color: #b1a9a9;
 }
 
 .page-dashboard .list-group-item.active {
@@ -12368,14 +12372,33 @@ footer a {
   .page-dashboard #page-content-wrapper {
     min-width: 0;
     width: 100%;
+    padding-top: 20px;
   }
   .page-dashboard #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
 
-.page-dashboard .section-content {
-  margin-top: 100px;
+.page-dashboard .section-content .card {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 4px 15px #f8f1f5;
+          box-shadow: 0px 4px 15px #f8f1f5;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none !important;
+}
+
+.page-dashboard .section-content .card .dashboard-card-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #b1a9a9;
+}
+
+.page-dashboard .section-content .card .dashboard-card-subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #0c0d36;
 }
 
 .component-projects {
